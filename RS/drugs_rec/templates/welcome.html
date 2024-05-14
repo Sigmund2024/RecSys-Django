@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to Drug Recommendation System</title>
+</head>
+<body>
+    <h1>Welcome to Drug Recommendation System</h1>
+    <form method="post" action="{% url 'query_user_info' %}">
+        {% csrf_token %}
+        <label for="user_id">User ID:</label>
+        <input type="text" id="user_id" name="user_id">
+        <input type="submit" value="Query Personal Information">
+    </form>
+</body>
+</html>
