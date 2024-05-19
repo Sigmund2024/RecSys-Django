@@ -11,12 +11,5 @@
     <p>Age: {{ user.age }}</p>
     <p>MADRS-Score: {{ user.madrs_score }}</p>
     <p>HAM-A-Score: {{ user.ham_a_score }}</p>
-    <form method="post" action="{% url 'drug_list' %}">
-        {% csrf_token %}
-        <input type="hidden" name="user_id" value="{{ user.id }}">
-        <label for="k_value">Number of Drugs (k):</label>
-        <input type="number" id="k_value" name="k" min="1" placeholder="Enter k value" required>
-        <input type="submit" value="Get Drug Recommendations">
-    </form>
 </body>
 </html>

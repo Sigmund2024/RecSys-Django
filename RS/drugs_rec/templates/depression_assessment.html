@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MADRS Depression Assessment</title>
+    <style>
+        /* 样式内容可以根据需求进行调整 */
+        .container {
+            width: 50%;
+            margin: auto;
+        }
+        .question {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>MADRS Depression Assessment</h1>
+        <form method="post" action="{% url 'madrs_assessment_submit' user_id=user_id %}">
+            {% csrf_token %}
+            <div class="question">
+                <label>1. 观察到的抑郁：</label><br>
+                <input type="radio" name="question1" value="0">无（0分）<br>
+                <input type="radio" name="question1" value="1">介于上下两种选项之间（1分）<br>
+                <input type="radio" name="question1" value="2">看起来是悲伤的，但能使之高兴一些（2分）<br>
+                <input type="radio" name="question1" value="3">介于上下两种选项之间（3分）<br>
+                <input type="radio" name="question1" value="4">突出的悲伤忧郁，但其情绪仍可受外界环境影响（4分）<br>
+                <input type="radio" name="question1" value="5">介于上下两种选项之间（5分）<br>
+                <input type="radio" name="question1" value="6">整天抑郁，极度严重（6分）<br>
+            </div>
+            <!-- 其他问题和选项依此类推 -->
+            <div class="question">
+                <label>2. 抑郁主诉：</label><br>
+                <input type="radio" name="question2" value="0">在日常心境中偶有抑郁（0分）<br>
+                <input type="radio" name="question2" value="1">介于上下两种选项之间（1分）<br>
+                <input type="radio" name="question2" value="2">有抑郁或情绪低沉，但可使之愉快些（2分）<br>
+                <input type="radio" name="question2" value="3">介于上下两种选项之间（3分）<br>
+                <input type="radio" name="question2" value="4">沉湎于抑郁沮丧心境，但环境仍可对心境有些影响（4分）<br>
+                <input type="radio" name="question2" value="5">介于上下两种选项之间（5分）<br>
+                <input type="radio" name="question2" value="6">持久不断的深度抑郁沮丧（6分）<br>
+            </div>
+            <div class="question">
+                <label>3. 内心紧张：</label><br>
+                <input type="radio" name="question3" value="0">平静，偶有瞬间的紧张（0分）<br>
+                <input type="radio" name="question3" value="1">介于上下两种选项之间（1分）<br>
+                <input type="radio" name="question3" value="2">偶有紧张不安及难以言明的不舒服感（2分）<br>
+                <input type="radio" name="question3" value="3">介于上下两种选项之间（3分）<br>
+                <input type="radio" name="question3" value="4">持久的内心紧张，或间歇呈现的恐惧状态，要花费相当努力方能克制（4分）<br>
+                <input type="radio" name="question3" value="5">介于上下两种选项之间（5分）<br>
+                <input type="radio" name="question3" value="6">持续的恐惧和苦恼，极度惊恐（6分）<br>
+            </div>
+            <!-- 剩余问题的表单项 -->
+            <input type="submit" value="Submit Assessment">
+        </form>
+    </div>
+</body>
+</html>

@@ -3,14 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <title>Welcome to Drug Recommendation System</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0; /* 背景颜色 */
+        }
+        .container {
+            text-align: center;
+            background-color: #ffffff; /* 容器背景颜色 */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to Drug Recommendation System</h1>
-    <form method="post" action="{% url 'query_user_info' %}">
-        {% csrf_token %}
-        <label for="user_id">User ID:</label>
-        <input type="text" id="user_id" name="user_id">
-        <input type="submit" value="Query Personal Information">
-    </form>
+    <div class="container">
+        <h1>Welcome to Drug Recommendation System</h1>
+        <form method="post" action="{% url 'query_user_info' %}">
+            {% csrf_token %}
+            <label for="user_id">User ID:</label>
+            <input type="text" id="user_id" name="user_id"><br><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password"><br><br>
+            <input type="submit" value="Login">
+        </form>
+    </div>
 </body>
 </html>

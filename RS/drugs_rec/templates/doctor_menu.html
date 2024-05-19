@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Doctor Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .menu-container {
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .menu-list {
+            list-style-type: none;
+            padding: 0;
+            width: 300px;
+            margin: 0 auto;
+        }
+
+        .menu-list li {
+            margin-bottom: 10px;
+        }
+
+        .menu-list li a {
+            display: block;
+            padding: 10px;
+            background-color: #fff;
+            color: #333;
+            text-decoration: none;
+            border-radius: 5px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease;
+        }
+
+        .menu-list li a:hover {
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-container">
+        <h1>Welcome, Doctor</h1>
+        <ul class="menu-list">
+            <li><a href="{% url 'patient_info_management' %}">Patient Information Management</a></li>
+            <li><a href="{% url 'drug_info_management' %}">Drug Information Management</a></li>
+            <li><a href="{% url 'system_user_management' %}">System User Management</a></li>
+        </ul>
+    </div>
+</body>
+</html>
