@@ -63,146 +63,146 @@
     <form action="{% url 'hars_assessment_submit' user_id=user_id %}" method="POST">
         {% csrf_token %}
         <div>
-            <label for="question1">1. 焦虑心境:</label>
+            <label for="question1">1. Anxious Mood:</label>
             <select id="question1" name="question1">
-                <option value="0">无</option>
-                <option value="1">轻</option>
-                <option value="2">中</option>
-                <option value="3">重度</option>
-                <option value="4">极重</option>
+                <option value="0">None</option>
+                <option value="1">Mild</option>
+                <option value="2">Moderate</option>
+                <option value="3">Severe</option>
+                <option value="4">Very Severe</option>
             </select>
         </div>
         <div>
-            <label for="question2">2. 紧张:</label>
+            <label for="question2">2. Tension:</label>
             <select id="question2" name="question2">
-                <option value="0">无</option>
-                <option value="1">轻</option>
-                <option value="2">中</option>
-                <option value="3">重度</option>
-                <option value="4">极重</option>
+                <option value="0">None</option>
+                <option value="1">Mild</option>
+                <option value="2">Moderate</option>
+                <option value="3">Severe</option>
+                <option value="4">Very Severe</option>
             </select>
         </div>
         <div>
-            <label for="question3">3. 害怕:</label>
+            <label for="question3">3. Fears:</label>
             <select id="question3" name="question3">
-                <option value="0">无</option>
-                <option value="1">轻</option>
-                <option value="2">中</option>
-                <option value="3">重度</option>
-                <option value="4">极重</option>
+                <option value="0">None</option>
+                <option value="1">Mild</option>
+                <option value="2">Moderate</option>
+                <option value="3">Severe</option>
+                <option value="4">Very Severe</option>
             </select>
         </div>
         <div>
-            <label for="question4">4. 失眠:</label>
+            <label for="question4">4. Insomnia:</label>
             <select id="question4" name="question4">
-                <option value="0">无</option>
-                <option value="1">轻</option>
-                <option value="2">中</option>
-                <option value="3">重度</option>
-                <option value="4">极重</option>
+                <option value="0">None</option>
+                <option value="1">Mild</option>
+                <option value="2">Moderate</option>
+                <option value="3">Severe</option>
+                <option value="4">Very Severe</option>
             </select>
         </div>
         <div>
-            <label for="question5">5. 认知功能:</label>
+            <label for="question5">5. Cognitive Function:</label>
             <select id="question5" name="question5">
-                <option value="0">无</option>
-                <option value="1">轻</option>
-                <option value="2">中</option>
-                <option value="3">重度</option>
-                <option value="4">极重</option>
+                <option value="0">None</option>
+                <option value="1">Mild</option>
+                <option value="2">Moderate</option>
+                <option value="3">Severe</option>
+                <option value="4">Very Severe</option>
             </select>
         </div>
         <div>
-            <label for="question6">6. 抑郁心境:</label>
+            <label for="question6">6. Depressed Mood:</label>
             <select id="question6" name="question6">
-                <option value="0">无</option>
-                <option value="1">轻</option>
-                <option value="2">中</option>
-                <option value="3">重度</option>
-                <option value="4">极重</option>
+                <option value="0">None</option>
+                <option value="1">Mild</option>
+                <option value="2">Moderate</option>
+                <option value="3">Severe</option>
+                <option value="4">Very Severe</option>
             </select>
         </div>
         <div>
-            <label for="question7">7. 躯体性焦虑:</label>
+            <label for="question7">7. Somatic Anxiety:</label>
             <select id="question7" name="question7">
-                <option value="0">无</option>
-                <option value="1">轻</option>
-                <option value="2">中</option>
-                <option value="3">重度</option>
-                <option value="4">极重</option>
+                <option value="0">None</option>
+                <option value="1">Mild</option>
+                <option value="2">Moderate</option>
+                <option value="3">Severe</option>
+                <option value="4">Very Severe</option>
             </select>
         </div>
         <div>
-            <label for="question8">8. 感觉系统症状:</label>
+            <label for="question8">8. Sensory System Symptoms:</label>
             <select id="question8" name="question8">
-                <option value="0">无</option>
-                <option value="1">轻</option>
-                <option value="2">中</option>
-                <option value="3">重度</option>
-                <option value="4">极重</option>
+                <option value="0">None</option>
+                <option value="1">Mild</option>
+                <option value="2">Moderate</option>
+                <option value="3">Severe</option>
+                <option value="4">Very Severe</option>
             </select>
         </div>
-                <div>
-            <label for="question9">9. 心血管系统症状:</label>
+        <div>
+            <label for="question9">9. Cardiovascular Symptoms:</label>
             <select id="question9" name="question9">
-                <option value="0">无</option>
-                <option value="1">轻</option>
-                <option value="2">中</option>
-                <option value="3">重度</option>
-                <option value="4">极重</option>
+                <option value="0">None</option>
+                <option value="1">Mild</option>
+                <option value="2">Moderate</option>
+                <option value="3">Severe</option>
+                <option value="4">Very Severe</option>
             </select>
         </div>
         <div>
-            <label for="question10">10. 呼吸系统症状:</label>
+            <label for="question10">10. Respiratory Symptoms:</label>
             <select id="question10" name="question10">
-                <option value="0">无</option>
-                <option value="1">轻</option>
-                <option value="2">中</option>
-                <option value="3">重度</option>
-                <option value="4">极重</option>
+                <option value="0">None</option>
+                <option value="1">Mild</option>
+                <option value="2">Moderate</option>
+                <option value="3">Severe</option>
+                <option value="4">Very Severe</option>
             </select>
         </div>
         <div>
-            <label for="question11">11. 胃肠消化道症状:</label>
+            <label for="question11">11. Gastrointestinal Symptoms:</label>
             <select id="question11" name="question11">
-                <option value="0">无</option>
-                <option value="1">轻</option>
-                <option value="2">中</option>
-                <option value="3">重度</option>
-                <option value="4">极重</option>
+                <option value="0">None</option>
+                <option value="1">Mild</option>
+                <option value="2">Moderate</option>
+                <option value="3">Severe</option>
+                <option value="4">Very Severe</option>
             </select>
         </div>
         <div>
-            <label for="question12">12. 生殖，泌尿系统症状:</label>
+            <label for="question12">12. Genitourinary Symptoms:</label>
             <select id="question12" name="question12">
-                <option value="0">无</option>
-                <option value="1">轻</option>
-                <option value="2">中</option>
-                <option value="3">重度</option>
-                <option value="4">极重</option>
+                <option value="0">None</option>
+                <option value="1">Mild</option>
+                <option value="2">Moderate</option>
+                <option value="3">Severe</option>
+                <option value="4">Very Severe</option>
             </select>
         </div>
         <div>
-            <label for="question13">13. 自主神经系统症状:</label>
+            <label for="question13">13. Autonomic Symptoms:</label>
             <select id="question13" name="question13">
-                <option value="0">无</option>
-                <option value="1">轻</option>
-                <option value="2">中</option>
-                <option value="3">重度</option>
-                <option value="4">极重</option>
+                <option value="0">None</option>
+                <option value="1">Mild</option>
+                <option value="2">Moderate</option>
+                <option value="3">Severe</option>
+                <option value="4">Very Severe</option>
             </select>
         </div>
         <div>
-            <label for="question14">14. 与人谈话时行为表现:</label>
+            <label for="question14">14. Behavior at Interview:</label>
             <select id="question14" name="question14">
-                <option value="0">无</option>
-                <option value="1">轻</option>
-                <option value="2">中</option>
-                <option value="3">重度</option>
-                <option value="4">极重</option>
+                <option value="0">None</option>
+                <option value="1">Mild</option>
+                <option value="2">Moderate</option>
+                <option value="3">Severe</option>
+                <option value="4">Very Severe</option>
             </select>
         </div>
-        <button type="submit">提交</button>
+        <button type="submit">Submit</button>
     </form>
 </body>
 </html>
